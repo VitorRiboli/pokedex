@@ -15,7 +15,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 30px 80px;
+    margin: 30px;
     padding: 20px;
 }
 
@@ -32,6 +32,7 @@ body{
 }
 
 .input {
+    text-align: center;
     width: 200px;
     padding: 10px 30px;
     border-radius: 30px;
@@ -76,28 +77,70 @@ body{
 }
 
 .pokemon-box img{
-    width:100%;
+    align-items: center;
+    width: 100%;
 }
 
 .pokemon-box p{
     color:rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 700;
     text-align: center;
-    padding:10px 0;
+    padding: 0 10px 10px 5px;
 }
 
 @media screen and (max-width:768px){
+    .main {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .main img{
+        width: 80%;
+    }
+
+    .input {
+        text-align: center;
+        width: 120px;
+        padding: 5px 10px;
+        border-radius: 30px;
+        border: 3px solid rgb(0, 80, 250);
+        background: none;
+        font-size: 20px;
+        font-weight: 700;
+        color: rgb(27, 27, 27);
+        background-color: rgb(250, 210, 15);
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        color: azure;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
     .pokemon-box{
-        width: 70%;
-        text-align;
-        center;}
+        width: 80%;
+        text-align: center;
+        align-items: center;
+    }
 
     .pokemon-box img{
-        max-width: 300px;
+        max-width: 80%;
+        align-items: center;
     }
 
     .pokemon-box:hover {
         width: 90%;
+    }
+
+    .pokemon-box p{
+        color:rgb(0, 0, 0);
+        font-size: 17px;
+        font-weight: 700;
+        text-align: center;
+        padding:10px 0;
     }
 }
