@@ -23,21 +23,30 @@ body{
     width: 550px;
 }
 
+.subtitle {
+    font-size: 30px;
+    font-weight: 600;
+    color: azure;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 .input {
-    width: 400px;
+    width: 200px;
     padding: 10px 30px;
     border-radius: 30px;
-    border: 3px solid rgb(22, 22, 22);
+    border: 3px solid rgb(0, 80, 250);
     background: none;
     font-size: 20px;
     font-weight: 700;
     color: rgb(27, 27, 27);
-    background-color: rgb(248, 213, 15);
+    background-color: rgb(250, 210, 15);
 }
 
-.input:hover {
-    background-color: rgb(0, 81, 255);
-    color: rgb(248, 213, 15);
+.input:hover{
+    background-color: rgb(0, 80, 250);
+    color: rgb(250, 210, 15);
+    border: 3px solid rgb(250, 210, 15);
 }
 
 .pokemon-boxes{
@@ -54,7 +63,7 @@ body{
     width:20%;
     margin: 20px 5px;
     background-color:rgb(190, 180, 180);
-    border: 2px solid rgb(0, 81, 255);
+    border: 2px solid rgb(0, 80, 250);
     transition: 0.3s;
 }
 
