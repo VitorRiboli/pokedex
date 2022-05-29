@@ -1,14 +1,15 @@
-var quantidade = document.getElementById('quantidade');
+const quantidade = document.getElementById('quantidade');
 quantidade.addEventListener('keyup', () => {
     pegaPokemons(quantidade.value);
 })
-pegaPokemons(2);
+
+pegaPokemons(10);
 function pegaPokemons(quantidade) {
     fetch('https://pokeapi.co/api/v2/pokemon?limit=' + quantidade)
         .then(response => response.json())
         .then(allpokemon => {
 
-            var pokemons = [];
+            const pokemons = [];
 
             allpokemon.results.map((val) => {
 
@@ -28,12 +29,11 @@ function pegaPokemons(quantidade) {
                             // console.log(pokemons);
                             pokemons.map(function (val) {
                                 pokemonBoxes.innerHTML += `
-                                
-                <div class="pokemon-box">
-                    <img src="`+ val.imagem + `" />
-                    <p>`+ val.nome + `</p>
-                </div>          
-                                `;
+                                    <div class="pokemon-box">
+                                        <img src="`+ val.imagem + `" />
+                                        <p>`+ val.nome + `</p>
+                                    </div>          
+                                    `;
                             })
                         }
                     })
