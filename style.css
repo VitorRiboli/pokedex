@@ -90,7 +90,7 @@ body{
 @media screen and (max-width:768px){
     .pokemon-box{
         width: 70%;
-        text-align: 
+        text-align;
         center;}
 
     .pokemon-box img{
